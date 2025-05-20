@@ -1,6 +1,6 @@
 # RSS Webhook Service API - Copilot Instructions
 
-Create a REST API service in Deno that manages RSS feed subscriptions and delivers updates via webhooks. The service should use TypeScript and SQLite for data persistence.
+Create a REST API service that manages RSS feed subscriptions and delivers updates via webhooks.
 
 ## Core Requirements
 
@@ -9,7 +9,6 @@ Build a stateless API with these endpoints:
 - **Authentication**: Generate and refresh API tokens for user identification
 - **Subscriptions**: Create, list, delete (individual and batch), and manage RSS feed subscriptions
 - **Webhooks**: Register webhook URLs to receive feed updates
-- **Feed Data**: Retrieve feed content within specified date ranges
 
 ## Technical Specifications
 

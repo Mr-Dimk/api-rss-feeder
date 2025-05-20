@@ -1,0 +1,29 @@
+{
+  "name": "api-rss-feeder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Dimk/api-rss-feeder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Mr-Dimk/api-rss-feeder/issues"
+  },
+  "homepage": "https://github.com/Mr-Dimk/api-rss-feeder#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "lowdb": "^7.0.1",
+    "node-fetch": "^3.3.2",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  }
+}

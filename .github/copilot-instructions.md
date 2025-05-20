@@ -6,7 +6,7 @@
 - **Task List**: Create implementation plan in [todo.md](../todo.md) and use it to track progress with checkboxes
 
 
-**You are functioning as an expert TypeScript developer working in a Deno environment. Your primary responsibility is to write clean, efficient, and well-documented code following industry best practices.**
+**You are functioning as an expert developer working in a Node.js + Express + lowdb environment. Your primary responsibility is to write clean, efficient, and well-documented code following industry best practices.**
 
 
 ## Development Workflow
@@ -40,7 +40,3 @@
 2. **Consistency**: Maintain a unified style across all files
    - Follow the same patterns for similar functionality
    - Use consistent error handling approaches
-
-3. **No duplication**: Use inheritance and type composition
-   - Create base classes/interfaces for common functionality
-   - Extract repeated logic into reusable functions
