@@ -13,9 +13,8 @@ Build a stateless API with these endpoints:
 
 ## Technical Specifications
 
-- Use Deno 2.x with vanilla TypeScript (no frameworks)
-- Implement a SQLite database for persistent storage
-- Design stateless architecture with token-based authentication
+- Use Node.js + Express + lowdb
+- Design stateless architecture with stupid simple token-based authentication
 - Implement proper error handling and status codes
 - Ensure webhook delivery is reliable and implements retry logic
 
@@ -24,7 +23,7 @@ Build a stateless API with these endpoints:
 Define these core models:
 
 1. **User**: Identified solely by API token
-2. **Subscription**: RSS feed URL, update frequency, creation date, ID
+2. **Subscription**: RSS feed URL, update frequency, ID
 3. **Webhook**: Callback URL, associated subscription IDs
 4. **FeedItem**: Content, publication date, subscription reference
 
@@ -43,15 +42,6 @@ DELETE /api/subscriptions/:id  # Remove specific subscription
 
 GET /api/feeds              # Get feed items with date filtering
 POST /api/webhooks          # Register webhook URL for notifications
-```
-
-## Database Schema
-
-Design an SQLite schema optimized for:
-
-- Fast subscription lookups by user
-- Efficient feed item retrieval by date range
-- Proper relationship between subscriptions and webhooks
 
 ## Implementation Notes
 

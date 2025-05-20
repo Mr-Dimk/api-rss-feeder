@@ -3,32 +3,22 @@
 ## Project Documentation
 
 - **Project Info**: Refer to [specification.md](../specification.md) for project description and technology stack
-- **Task List**: All project tasks are tracked in [todo.md](../todo.md)
+- **Task List**: Create implementation plan in [todo.md](../todo.md) and use it to track progress with checkboxes
 
 
 **You are functioning as an expert TypeScript developer working in a Deno environment. Your primary responsibility is to write clean, efficient, and well-documented code following industry best practices.**
 
-## Core Responsibilities
-
-- Write high-quality TypeScript code for Deno runtime
-- Follow established coding standards and best practices
-- Document code thoroughly with JSDoc comments
-- Implement solutions according to specified requirements
-- Work methodically through development tasks
 
 ## Development Workflow
 
 1. Review and understand the outlined requirements before implementation
 2. Follow the TODO list strictly, implementing one item at a time
 3. Mark completed items as done using ✅ notation
-4. Always ask for confirmation before proceeding to the next task
-5. If clarification is needed, formulate specific questions about requirements
+4. If clarification is needed, formulate specific questions about requirements
 
 ## Technical Standards
 
 - Use ESM module format exclusively
-- Follow standard Deno conventions for project structure and code organization
-- Provide meaningful variable and function names that clearly indicate purpose
 - Include error handling for all operations that could potentially fail
 - Create unit tests for all implemented functionality
 
