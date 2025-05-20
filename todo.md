@@ -27,11 +27,11 @@
 
 ## Feed Endpoints
 
-- [ ] GET /api/feeds – Get feed items (with date filtering)
+- [x] GET /api/feeds – Get feed items (with date filtering)
 
 ## Webhook Endpoints
 
-- [ ] POST /api/webhooks – Register webhook URL
+- [x] POST /api/webhooks – Register webhook URL
 
 ## Background Services
 

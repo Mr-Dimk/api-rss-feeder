@@ -1,6 +1,8 @@
 import express from 'express';
 import authRouter from './routes/auth.js';
 import subscriptionsRouter from './routes/subscriptions.js';
+import feedsRouter from './routes/feeds.js';
+import webhooksRouter from './routes/webhooks.js';
 
 const app = express();
 app.use(express.json());
@@ -9,6 +11,10 @@ app.use(express.json());
 app.use('/api/auth', authRouter);
 // Mount subscriptions routes
 app.use('/api/subscriptions', subscriptionsRouter);
+// Mount feeds routes
+app.use('/api/feeds', feedsRouter);
+// Mount webhooks routes
+app.use('/api/webhooks', webhooksRouter);
 
 // Basic error handler
 app.use((err, req, res, next) => {
