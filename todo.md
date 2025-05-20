@@ -35,8 +35,8 @@
 
 ## Background Services
 
-- [ ] Implement periodic feed polling (update frequency)
-- [ ] Implement webhook delivery with retry logic
+- [x] Implement periodic feed polling (update frequency)
+- [x] Implement webhook delivery with retry logic
 
 ## Validation, Error Handling, and Logging
 

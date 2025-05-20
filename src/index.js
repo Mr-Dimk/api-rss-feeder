@@ -3,6 +3,8 @@ import authRouter from './routes/auth.js';
 import subscriptionsRouter from './routes/subscriptions.js';
 import feedsRouter from './routes/feeds.js';
 import webhooksRouter from './routes/webhooks.js';
+import { startFeedPolling } from './services/feedPoller.js';
+import { startWebhookDispatcher } from './services/webhookDispatcher.js';
 
 const app = express();
 app.use(express.json());
@@ -24,4 +26,6 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  startFeedPolling();
+  startWebhookDispatcher();
 });
