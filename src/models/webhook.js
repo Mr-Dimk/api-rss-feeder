@@ -8,9 +8,10 @@ import Joi from 'joi';
 
 export const webhookSchema = Joi.object({
   callbackUrl: Joi.string().uri().required(),
-  subscriptionIds: Joi.array().items(
-    Joi.string().guid({ version: 'uuidv4' })
-  ).min(1).required(),
+  subscriptionIds: Joi.array()
+    .items(Joi.string().guid({ version: 'uuidv4' }))
+    .min(1)
+    .required(),
 });
 
 export function createWebhook({ callbackUrl, subscriptionIds }) {
